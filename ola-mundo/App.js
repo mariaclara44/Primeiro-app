@@ -4,7 +4,6 @@ import { Image} from 'react-native';
 
 export default function App() {
   return (
-    
     <View style={styles.container}>
       <Image
       source={require('./assets/logo.png')}
@@ -21,6 +20,7 @@ export default function App() {
     </View>
   );
 }
+
 
 const styles = StyleSheet.create({
   container: {
