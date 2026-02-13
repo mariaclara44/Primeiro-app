@@ -31,15 +31,15 @@ export default function App() {
     <View style={styles.socialRow} >
 
       <TouchableOpacity style={styles.socialButton} >
-        <FontAwesome name ='Google' size={20} color = '#00ADEF'/>
+        <FontAwesome name ='google' size={20} color = '#00ADEF'/>
       </TouchableOpacity>
 
       <TouchableOpacity style={styles.socialButton} >
-        <FontAwesome name ='Facebook' size={20} color = '#00ADEF'/>
+        <FontAwesome name ='facebook' size={20} color = '#00ADEF'/>
       </TouchableOpacity>
 
       <TouchableOpacity style={styles.socialButton} >
-        <FontAwesome name ='Instagram' size={20} color = '#00ADEF'/>
+        <FontAwesome name ='instagram' size={20} color = '#00ADEF'/>
       </TouchableOpacity>
 
 
