@@ -1,5 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, TextInput, View } from 'react-native';
+import { StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { FontAwesome} from '@expo/vector-icons';
 import { Image} from 'react-native';
 
 export default function App() {
@@ -11,10 +12,13 @@ export default function App() {
       resizeMode="contain"/>
       <StatusBar style="auto"/>
       <Text style={styles.estilotexto}>Join Us</Text>
+
       <Text style={styles.textoPequeno}>Your name:</Text>
       <TextInput style={styles.input}placeholder='Enter you full name'/>
+
       <Text style={styles.textoPequeno}>Your Email</Text>
       <TextInput style={styles.input}placeholder='hello@gmail.com'/>
+
       <Text style={styles.textoPequeno}>Password</Text>
       <TextInput style={styles.input}placeholder='Enter your password'/>
 
@@ -22,8 +26,24 @@ export default function App() {
         <View style = {styles.line} />
         <Text Style = {styles.dividirText}> or </Text>
         <View style = {styles.line} />
-
       </View>
+
+    <View style={styles.socialRow} >
+
+      <TouchableOpacity style={styles.socialButton} >
+        <FontAwesome name ='Google' size={20} color = '#00ADEF'/>
+      </TouchableOpacity>
+
+      <TouchableOpacity style={styles.socialButton} >
+        <FontAwesome name ='Facebook' size={20} color = '#00ADEF'/>
+      </TouchableOpacity>
+
+      <TouchableOpacity style={styles.socialButton} >
+        <FontAwesome name ='Instagram' size={20} color = '#00ADEF'/>
+      </TouchableOpacity>
+
+
+    </View>
     </View>
   );
 }
@@ -67,5 +87,58 @@ const styles = StyleSheet.create({
     paddingLeft: 10,
     borderRadius: 8,
     paddingHorizontal: 10,
+  },
+
+  dividirContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    width: '80%',
+    marginVertical: 25,
+  },
+
+  line: {
+    flex: 1,
+    height: 1,
+    backgroundColor: '#CCC',
+  },
+
+  dividirText: {
+    marginHorizontal: 10,
+    color: 'gray',
+  },
+  
+  socialRow: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    gap: 20,
+    marginBottom: 30,
+  },
+
+  socialButton: {
+    width: 50,
+    height: 50,
+    borderRadius: 12,
+    borderWidth: 1,
+    borderColor: '#f0faff',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  buttonMain: {
+    backgroundColor: '#00ADEF',
+    width: '88%',
+    height: 55,
+    borderRadius: 30,
+    justifyContent: 'center',
+    alignItems: 'center',
+    elevation: 4,
+    shadowColor: '#000',
+    shadowOffSet: {width: 0, height: 2},
+    shadowOpacity: 0.2,
+    shadowRadius: 4,
+  },
+  buttonMainText: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: 'bold',
   },
 });
