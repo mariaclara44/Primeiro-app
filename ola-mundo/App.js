@@ -17,6 +17,13 @@ export default function App() {
       <TextInput style={styles.input}placeholder='hello@gmail.com'/>
       <Text style={styles.textoPequeno}>Password</Text>
       <TextInput style={styles.input}placeholder='Enter your password'/>
+
+      <View style = {styles.dividirContainer} >
+        <View style = {styles.line} />
+        <Text Style = {styles.dividirText}> or </Text>
+        <View style = {styles.line} />
+
+      </View>
     </View>
   );
 }
